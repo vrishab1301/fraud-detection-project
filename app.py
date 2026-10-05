@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
 from xgboost import XGBClassifier
 
-st.set_page_config(page_title="Fraud Detection: Rules vs AI", page_icon="🛡️", layout="wide")
+st.set_page_config(page_title="Fraud Detection: Rules vs AI", layout="wide")
 
 
 def rule_based_check(amount):
@@ -59,7 +59,7 @@ with st.sidebar:
     )
 
 # ---------- Header ----------
-st.title("🛡️ Fraud Detection: Rules vs AI")
+st.title("Fraud Detection: Rules vs AI")
 st.markdown("Can an AI spot fraud better than hand-written rules? Here are the results.")
 
 # ---------- Scoreboard ----------
